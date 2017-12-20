@@ -1,0 +1,13 @@
+body{font-size:12px}
+.navbar-menu{padding: 10px 0;}
+.navbar-fixed-top{padding: 10px 0 !important;}
+.navbar-brand{padding:5px}
+#main-slide .item{min-height: 500px;}
+.navbar-menu .navbar-nav > li > .dropdown-menu{margin-top:10px}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{background-color:#00AEF0;}
+
+.navbar-menu .navbar-nav > a {font-weight:bold}
+.footer-bottom{font-size: 12px;
+padding: 5px 0;}
+.footer-bottom .copyright{margin: 10px 0 10px 0;}
+.footer-top-box{margin:0 auto}
