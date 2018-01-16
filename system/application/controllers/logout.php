@@ -15,7 +15,7 @@ class Logout extends Controller {
 	function index()
 	{
 		
-		$this->session->unset_userdata('mercu_in');
+		$this->session->unset_userdata('setneg_in');
 		echo "<meta http-equiv='refresh' content='0; url=".base_url()."login'>";
 	}
 }

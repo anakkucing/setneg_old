@@ -25,33 +25,19 @@
   <link rel="stylesheet" href="<?=base_url()?>assets/global/fonts/brand-icons/brand-icons.min.css">
   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
   <link rel="stylesheet" href="<?=base_url()?>assets/css/reset.css">
-  <!--[if lt IE 9]>
-    <script src="<?=base_url()?>assets/global/vendor/html5shiv/html5shiv.min.js"></script>
-    <![endif]-->
-  <!--[if lt IE 10]>
-    <script src="<?=base_url()?>assets/global/vendor/media-match/media.match.min.js"></script>
-    <script src="<?=base_url()?>assets/global/vendor/respond/respond.min.js"></script>
-    <![endif]-->
-  <!-- Scripts -->
   <script src="<?=base_url()?>assets/global/vendor/breakpoints/breakpoints.js"></script>
   <script>
   Breakpoints();
   </script>
 </head>
 <body class="animsition site-navbar-small app-message page-aside-scroll page-aside-left">
-  <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega navbar-inverse"
-  role="navigation">
+	<nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega navbar-inverse" role="navigation">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
-      data-toggle="menubar">
+      <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided" data-toggle="menubar">
         <span class="sr-only">Toggle navigation</span>
         <span class="hamburger-bar"></span>
       </button>
-      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
-      data-toggle="collapse">
+      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
         <i class="icon wb-more-horizontal" aria-hidden="true"></i>
       </button>
       <a class="navbar-brand navbar-brand-center" href="<?=base_url()?>dashboard">
@@ -59,8 +45,7 @@
         <img class="navbar-brand-logo navbar-brand-logo-special" src="<?=base_url()?>assets/images/logo-blue.png" title="Sistem e-SOP Sekretariat Negara">
         <span class="navbar-brand-text hidden-xs-down"> Sistem e-SOP Kementerian Sekretariat Negara</span>
       </a>
-      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search"
-      data-toggle="collapse">
+      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search" data-toggle="collapse">
         <span class="sr-only">Toggle Search</span>
         <i class="icon wb-search" aria-hidden="true"></i>
       </button>
@@ -88,14 +73,12 @@
             </a>
           </li>
           <li class="nav-item hidden-float">
-            <a class="nav-link icon wb-search" data-toggle="collapse" href="#" data-target="#site-navbar-search"
-            role="button">
+            <a class="nav-link icon wb-search" data-toggle="collapse" href="#" data-target="#site-navbar-search" role="button">
               <span class="sr-only">Toggle Search</span>
             </a>
           </li>
 		  <li class="nav-item dropdown">
-            <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" title="Pemberitahuan"
-            aria-expanded="false" data-animation="scale-up" role="button">
+            <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" title="Pemberitahuan" aria-expanded="false" data-animation="scale-up" role="button">
               <i class="icon wb-bell" aria-hidden="true"></i>
               <?=($notif->num_rows() > 0 ? '<span class="badge badge-pill badge-danger up">'.$notif->num_rows().'</span>' : '')?>
             </a>
@@ -151,7 +134,8 @@
               </span>
             </a>
             <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Profile</a>
+              <a class="dropdown-item" href="<?=base_url()?>settings/profile/<?=$userid?>" role="menuitem">
+				<i class="icon wb-user" aria-hidden="true"></i> Profile</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="<?=base_url()?>logout" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
             </div>
@@ -211,165 +195,14 @@
           <button class="input-search-btn" type="submit">
             <i class="icon wb-search" aria-hidden="true"></i>
           </button>
-          <form>
-            <input class="form-control" type="text" placeholder="Search Keyword" name="">
+          <form id="FrmSearchKontak">
+            <input class="form-control" type="text" placeholder="Search Keyword" id="key" onkeyup="searchKontak()">
           </form>
         </div>
         <div class="app-message-list page-aside-scroll">
           <div data-role="container">
             <div data-role="content">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <div class="media">
-                    <div class="pr-20">
-                      <a class="avatar avatar-online" href="javascript:void(0)">
-                        <img class="img-fluid" src="<?=base_url()?>assets/global/portraits/1.jpg" alt="..."><i></i></a>
-                    </div>
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-5">Kerem Sure</h5>
-                      <span class="media-time">15 sec ago</span>
-                    </div>
-                    <div class="pl-20">
-                      <span class="badge badge-pill badge-danger">3</span>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="media">
-                    <div class="pr-20">
-                      <a class="avatar avatar-online" href="javascript:void(0)">
-                        <img class="img-fluid" src="<?=base_url()?>assets/global/portraits/2.jpg" alt="..."><i></i></a>
-                    </div>
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-5">Eric hoffman</h5>
-                      <span class="media-time">1 minutes ago</span>
-                    </div>
-                    <div class="pl-20">
-                      <span class="badge badge-pill badge-danger"></span>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="media">
-                    <div class="pr-20">
-                      <a class="avatar avatar-online" href="javascript:void(0)">
-                        <img class="img-fluid" src="<?=base_url()?>assets/global/portraits/3.jpg" alt="..."><i></i></a>
-                    </div>
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-5">Eddie Lobanovskiy</h5>
-                      <span class="media-time">5 minutes ago</span>
-                    </div>
-                    <div class="pl-20">
-                      <span class="badge badge-pill badge-danger"></span>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="media">
-                    <div class="pr-20">
-                      <a class="avatar avatar-online" href="javascript:void(0)">
-                        <img class="img-fluid" src="<?=base_url()?>assets/global/portraits/4.jpg" alt="..."><i></i></a>
-                    </div>
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-5">Bill S Kenney</h5>
-                      <span class="media-time">15 minutes ago</span>
-                    </div>
-                    <div class="pl-20">
-                      <span class="badge badge-pill badge-danger">5</span>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item active">
-                  <div class="media">
-                    <div class="pr-20">
-                      <a class="avatar avatar-away" href="javascript:void(0)">
-                        <img class="img-fluid" src="<?=base_url()?>assets/global/portraits/5.jpg" alt="..."><i></i></a>
-                    </div>
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-5">Derek Bradley</h5>
-                      <span class="media-time">40 minutes ago</span>
-                    </div>
-                    <div class="pl-20">
-                      <span class="badge badge-pill badge-danger"></span>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="media">
-                    <div class="pr-20">
-                      <a class="avatar avatar-away" href="javascript:void(0)">
-                        <img class="img-fluid" src="<?=base_url()?>assets/global/portraits/6.jpg" alt="..."><i></i></a>
-                    </div>
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-5">Mariusz Ciesla</h5>
-                      <span class="media-time">2 hours ago</span>
-                    </div>
-                    <div class="pl-20">
-                      <span class="badge badge-pill badge-danger"></span>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="media">
-                    <div class="pr-20">
-                      <a class="avatar avatar-online" href="javascript:void(0)">
-                        <img class="img-fluid" src="<?=base_url()?>assets/global/portraits/7.jpg" alt="..."><i></i></a>
-                    </div>
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-5">Jesse Dodds</h5>
-                      <span class="media-time">3 hours ago</span>
-                    </div>
-                    <div class="pl-20">
-                      <span class="badge badge-pill badge-danger"></span>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="media">
-                    <div class="pr-20">
-                      <a class="avatar avatar-off" href="javascript:void(0)">
-                        <img class="img-fluid" src="<?=base_url()?>assets/global/portraits/8.jpg" alt="..."><i></i></a>
-                    </div>
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-5">Gerren Lamson</h5>
-                      <span class="media-time">3 hours ago</span>
-                    </div>
-                    <div class="pl-20">
-                      <span class="badge badge-pill badge-danger"></span>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="media">
-                    <div class="pr-20">
-                      <a class="avatar avatar-off" href="javascript:void(0)">
-                        <img class="img-fluid" src="<?=base_url()?>assets/global/portraits/9.jpg" alt="..."><i></i></a>
-                    </div>
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-5">Daniel Waldron</h5>
-                      <span class="media-time">5 hours ago</span>
-                    </div>
-                    <div class="pl-20">
-                      <span class="badge badge-pill badge-danger"></span>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="media">
-                    <div class="pr-20">
-                      <a class="avatar avatar-off" href="javascript:void(0)">
-                        <img class="img-fluid" src="<?=base_url()?>assets/global/portraits/10.jpg" alt="..."><i></i></a>
-                    </div>
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-5">Celikovic</h5>
-                      <span class="media-time">7 hours ago</span>
-                    </div>
-                    <div class="pl-20">
-                      <span class="badge badge-pill badge-danger"></span>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+              <ul class="list-group" id="ListKontak"></ul>
             </div>
           </div>
         </div>
@@ -378,115 +211,18 @@
     <!-- End Message Sidebar -->
     <div class="page-main">
       <!-- Chat Box -->
-      <div class="app-message-chats">
-        <button type="button" id="historyBtn" class="btn btn-round btn-outline btn-default">History Messages</button>
-        <div class="chats">
-          <div class="chat">
-            <div class="chat-avatar">
-              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="">
-                <img src="<?=base_url()?>assets/global/portraits/4.jpg" alt="June Lane">
-              </a>
-            </div>
-            <div class="chat-body">
-              <div class="chat-content">
-                <p>
-                  Hello. What can I do for you?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="chat chat-left">
-            <div class="chat-avatar">
-              <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="">
-                <img src="<?=base_url()?>assets/global/portraits/5.jpg" alt="Edward Fletcher">
-              </a>
-            </div>
-            <div class="chat-body">
-              <div class="chat-content">
-                <p>
-                  I'm just looking around.
-                </p>
-                <p>Will you tell me something about yourself? </p>
-              </div>
-              <div class="chat-content">
-                <p>
-                  Are you there? That time!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="chat">
-            <div class="chat-avatar">
-              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="">
-                <img src="<?=base_url()?>assets/global/portraits/4.jpg" alt="June Lane">
-              </a>
-            </div>
-            <div class="chat-body">
-              <div class="chat-content">
-                <p>
-                  Where?
-                </p>
-              </div>
-              <div class="chat-content">
-                <p>
-                  OK, my name is Limingqiang. I like singing, playing basketballand so on.
-                </p>
-              </div>
-            </div>
-          </div>
-          <p class="time">1 hours ago</p>
-          <div class="chat chat-left">
-            <div class="chat-avatar">
-              <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="">
-                <img src="<?=base_url()?>assets/global/portraits/5.jpg" alt="Edward Fletcher">
-              </a>
-            </div>
-            <div class="chat-body">
-              <div class="chat-content">
-                <p>You wait for notice.</p>
-              </div>
-              <div class="chat-content">
-                <p>Consectetuorem ipsum dolor sit?</p>
-              </div>
-              <div class="chat-content">
-                <p>OK?</p>
-              </div>
-            </div>
-          </div>
-          <div class="chat">
-            <div class="chat-avatar">
-              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="">
-                <img src="<?=base_url()?>assets/global/portraits/4.jpg" alt="June Lane">
-              </a>
-            </div>
-            <div class="chat-body">
-              <div class="chat-content">
-                <p>OK!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+	  <div class="app-message-chats" id="box">
+		  <div id="chat-box">
+			<h2 style='text-align:center;color:grey'>Klik List User Untuk Memulai Chatt</h2>
+		  </div>
+	  </div>
       <!-- End Chat Box -->
       <!-- Message Input-->
-      <form class="app-message-input">
+      <form class="app-message-input" style="display:none">
         <div class="message-input">
-          <textarea class="form-control" rows="1"></textarea>
-          <div class="message-input-actions btn-group">
-            <button class="btn btn-pure btn-icon btn-default" type="button">
-              <i class="icon wb-emoticon" aria-hidden="true"></i>
-            </button>
-            <button class="btn btn-pure btn-icon btn-default" type="button">
-              <i class="icon wb-image" aria-hidden="true"></i>
-            </button>
-            <button class="btn btn-pure btn-icon btn-default" type="button">
-              <i class="icon wb-paperclip" aria-hidden="true"></i>
-            </button>
-            <input id="messageImage" type="file" name="messageImage">
-            <input id="messageFile" type="file" name="messageFile">
-          </div>
+          <textarea class="form-control" id="pesan"></textarea>
         </div>
-        <button class="message-input-btn btn btn-primary" type="button">SEND</button>
+        <button class="message-input-btn btn btn-primary" type="button"  onClick="sendMessage()">SEND</button>
       </form>
       <!-- End Message Input-->
     </div>
@@ -538,5 +274,132 @@
   <script src="<?=base_url()?>assets/js/Site.js"></script>
   <script src="<?=base_url()?>assets/js/App/Message.js"></script>
   <script src="<?=base_url()?>assets/examples/js/apps/message.js"></script>
+  <script>
+$(document).ready(function(){
+	searchKontak()
+	
+	//getChat(0);
+	$("#user").click(function(){
+		$("#id_max").val('0');
+	});
+	
+	setInterval(function(){ 
+		if($("#id_user").val() > 0){
+			getLastId($("#id_user").val(),$("#id_max").val()); 
+			getChat($("#id_user").val(),$("#id_max").val()); 
+			autoScroll();
+		}else{
+			
+		}
+	},3000);
+});
+
+function getChatAll(id_user,id_max){
+	
+	$.ajax({
+		url		: "<?php echo site_url('komunikasi/getChat_all') ?>",
+		type	: 'POST',
+		dataType: 'html',
+		data 	: {id_user:id_user,id_max:id_max},
+		beforeSend	: function(){
+			$("#loading").show();
+		},
+		success	: function(result){
+			$("#loading").hide();
+			$("#chat-box").html(result);
+			$(".app-message-input").show();
+			
+			autoScroll();
+			document.getElementById('pesan').focus();
+		}
+	});
+}
+
+function getChat(id_user,id_max){
+	
+	$.ajax({
+		url		: "<?php echo site_url('komunikasi/getChat') ?>",
+		type	: 'POST',
+		dataType: 'html',
+		data 	: {id_user:id_user,id_max:id_max},
+		beforeSend	: function(){
+			$("#loading").show();
+		},
+		success	: function(result){
+			$("#loading").hide();
+			if(id_user != $("#id_user").val() ){
+				$("#chat-box").html(result);
+			}else{
+				$("#chat-box").append(result);
+			}
+			$(".app-message-input").show();
+			document.getElementById('pesan').focus();
+		}
+	});
+}
+
+function getLastId(id_user,id_max){
+	$.ajax({
+		url		: "<?php echo site_url('komunikasi/getLastId') ?>",
+		type	: 'POST',
+		dataType: 'json',
+		data 	: {id_user:id_user,id_max:id_max},
+		beforeSend	: function(){
+			
+		},
+		success	: function(result){
+			$("#id_max").val(result.id);
+		}
+	});
+}
+
+function sendMessage(){
+	var pesan 	= $("#pesan").val();
+	var id_user = $("#id_user").val();
+	
+	if(pesan == ''){
+		document.getElementById('pesan').focus();
+	}else{
+		$.ajax({
+			url		: "<?php echo site_url('komunikasi/sendMessage') ?>",
+			type	: 'POST',
+			dataType: 'json',
+			data 	: {id_user:id_user,pesan:pesan},
+			beforeSend	: function(){
+			},
+			success	: function(result){
+				getChat($("#id_user").val(),$("#id_max").val());
+				getLastId($("#id_user").val(),$("#id_max").val()); 
+				$("#pesan").val('');
+				autoScroll();
+			}
+		});
+	}
+}
+
+function searchKontak(){
+	var search 	= $("#key").val();
+	$.ajax({
+		url		: "<?php echo site_url('komunikasi/searchKontak') ?>",
+		type	: 'POST',
+		data 	: {key:search},
+		beforeSend	: function(){
+		},
+		success	: function(result){
+			$("#ListKontak").html(result);
+		}
+	});
+}
+
+function autoScroll(){
+	var elem = document.getElementById('box');
+	elem.scrollTop = elem.scrollHeight;
+}
+
+function aktifkan(i){
+	$("li").removeClass("active");
+	$("#aktif-"+i).addClass("active");
+}
+</script>
 </body>
 </html>

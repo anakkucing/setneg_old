@@ -16,9 +16,9 @@ class Act_komunikasi extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_kontak_kami()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -56,9 +56,9 @@ class Act_komunikasi extends Controller {
 	
 	function delete_kontak_kami()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -80,9 +80,9 @@ class Act_komunikasi extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_kritik_saran()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -117,9 +117,9 @@ class Act_komunikasi extends Controller {
 	
 	function delete_kritik_saran()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];

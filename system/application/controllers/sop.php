@@ -30,7 +30,7 @@ class Sop extends Controller {
 
 	function penyusunan_sop()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			$path = '../../../jscripts/ckfinder';
 			$this->editor($path);
@@ -39,7 +39,7 @@ class Sop extends Controller {
 			$data=array();
 			$data['title'] = 'Penyusunan SOP';
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
 			$data['fullname'] = $session_data['fullname'];
@@ -82,12 +82,12 @@ class Sop extends Controller {
 
 	function revisi_sop()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			$data=array();
 			$data['title'] = 'Revisi SOP';
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
 			$data['fullname'] = $session_data['fullname'];
@@ -123,12 +123,12 @@ class Sop extends Controller {
 
 	function reviu()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			$data=array();
 			$data['title'] = 'Reviu SOP';
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
 			$data['fullname'] = $session_data['fullname'];
@@ -160,12 +160,12 @@ class Sop extends Controller {
 
 	function pengesahan_sop()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			$data=array();
 			$data['title'] = 'Pengesahan SOP';
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
 			$data['fullname'] = $session_data['fullname'];
@@ -202,12 +202,12 @@ class Sop extends Controller {
 
 	function pencarian_sop()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			$data=array();
 			$data['title'] = 'Pencarian SOP';
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
 			$data['fullname'] = $session_data['fullname'];
@@ -238,7 +238,7 @@ class Sop extends Controller {
 
 	function evaluasi_sop()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			$path = '../../../jscripts/ckfinder';
 			$this->editor($path);
@@ -247,7 +247,7 @@ class Sop extends Controller {
 			$data=array();
 			$data['title'] = 'Evaluasi SOP';
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
 			$data['fullname'] = $session_data['fullname'];

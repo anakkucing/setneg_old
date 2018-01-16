@@ -15,9 +15,9 @@ class Master extends Controller {
 
 	function satuan_organisasi()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();
@@ -48,9 +48,9 @@ class Master extends Controller {
 
 	function unit_kerja()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();
@@ -82,9 +82,9 @@ class Master extends Controller {
 
 	function bagian()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();
@@ -117,13 +117,13 @@ class Master extends Controller {
 
 	function jabatan_pengesah()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			
 			$data=array();
 			$data['title'] = 'Jabatan Pengesah';
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['fullname'] = $session_data['fullname'];
 			$data['satkerid'] = $session_data['satkerid'];
 			$data['unitkerjaid'] = $session_data['unitkerjaid'];
@@ -155,9 +155,9 @@ class Master extends Controller {
 
 	function jenis_sop()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();
@@ -188,9 +188,9 @@ class Master extends Controller {
 
 	function simbol_panah()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();
@@ -221,9 +221,9 @@ class Master extends Controller {
 	
 	function pertanyaan()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();

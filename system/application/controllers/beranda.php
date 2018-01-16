@@ -35,7 +35,6 @@ class Beranda extends Controller {
 		 //$bataswaktu       = time() - 300;
 		 //$pengunjungonline = mysql_num_rows(mysql_query("SELECT * FROM tstatistika WHERE online > '$bataswaktu'")); // hitung pengunjung online
 		
-		
 		$data['slide'] = $this->main->select_table('slide','slide_id');
 		$data['kegiatan'] = $this->main->select_table('kegiatan','kegiatan_id');
 		$data['pengumuman'] = $this->main->select_table('pengumuman','pengumuman_id');

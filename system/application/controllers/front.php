@@ -30,12 +30,12 @@ class Front extends Controller {
 	  
 	function slide()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			
 			$data=array();
 			$data['title'] = 'Slide';
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
@@ -63,7 +63,7 @@ class Front extends Controller {
 
 	function tentang_kami()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			
 			if($this->uri->segment(4) != ''){
@@ -77,7 +77,7 @@ class Front extends Controller {
 				
 			$data=array();
 			$data['title'] = 'Tentang Kami';
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
@@ -105,7 +105,7 @@ class Front extends Controller {
 
 	function agenda()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			
 			if($this->uri->segment(4) != ''){
@@ -118,7 +118,7 @@ class Front extends Controller {
 			
 			$data=array();
 			$data['title'] = 'Agenda';
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
@@ -146,7 +146,7 @@ class Front extends Controller {
 
 	function pengumuman()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			
 			if($this->uri->segment(4) != ''){
@@ -159,14 +159,14 @@ class Front extends Controller {
 			
 			$data=array();
 			$data['title'] = 'Pengumuman';
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
 			$data['notif'] = $this->notif_m->notification(5,$userid);
 			$data['menu'] = $this->main->menu_backend($session_data['groupid']);
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['fullname'] = $session_data['fullname'];
 			$data['foto'] = $session_data['foto'];
 			$data['satkerid'] = $session_data['satkerid'];
@@ -190,12 +190,12 @@ class Front extends Controller {
 
 	function kegiatan()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			
 			$data=array();
 			$data['title'] = 'Kegiatan';
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];

@@ -14,12 +14,12 @@ class Notification extends Controller {
 
 	function semua()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{			
 			$data=array();
 			$data['title'] = 'Pemberitahuan';
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['groupid'] = $session_data['groupid'];
 			$data['fullname'] = $session_data['fullname'];
 			$data['satkernm'] = $session_data['satkernm'];
@@ -45,7 +45,7 @@ class Notification extends Controller {
 	
 	function salah()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{		
 			$Error ='';
 			$notifid = $this->input->post('id');
@@ -87,7 +87,7 @@ class Notification extends Controller {
 	}
 	function benar()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{			
 			$reviuid = $this->input->post('r');
 			$notifid = $this->input->post('i');

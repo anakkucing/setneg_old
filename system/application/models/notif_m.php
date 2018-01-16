@@ -59,7 +59,7 @@ class Notif_m extends Model
 		/* ================================================================================================================================================================ */
 		function semua()
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 		
 			$table = '(select * from notif where user_id='.$userid.') as notif';

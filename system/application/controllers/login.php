@@ -16,7 +16,7 @@ class Login extends Controller {
 	function index()
 	{			
 		
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			
 			echo "<meta http-equiv='refresh' content='0; url=".base_url()."dashboard'>";
@@ -27,7 +27,7 @@ class Login extends Controller {
 	
 	function login()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			
 			echo "<meta http-equiv='refresh' content='0; url=".base_url()."dashboard'>";
@@ -51,7 +51,7 @@ class Login extends Controller {
 	   }
 	   else
 	   {
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			redirect('dashboard/', 'refresh');
 			
 	   }
@@ -90,7 +90,7 @@ class Login extends Controller {
 				   
 						$_SESSION['IsAuthorized'] = 'ckeditor';
 						
-					   $this->session->set_userdata('mercu_in', $sess_array);
+					   $this->session->set_userdata('setneg_in', $sess_array);
 					   return TRUE;
 					}else{
 						$this->form_validation->set_message('check_database', 'User anda di blok');

@@ -16,9 +16,9 @@ class Act_master extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_satuan_organisasi()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -51,9 +51,9 @@ class Act_master extends Controller {
 	
 	function edit_satuan_organisasi()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -85,9 +85,9 @@ class Act_master extends Controller {
 	
 	function delete_satuan_organisasi()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -115,9 +115,9 @@ class Act_master extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_unit_kerja()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -149,9 +149,9 @@ class Act_master extends Controller {
 	
 	function edit_unit_kerja()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -182,9 +182,9 @@ class Act_master extends Controller {
 	}
 	function delete_unit_kerja()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -210,9 +210,9 @@ class Act_master extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_bagian()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -246,9 +246,9 @@ class Act_master extends Controller {
 	
 	function edit_bagian()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -281,9 +281,9 @@ class Act_master extends Controller {
 	}
 	function delete_bagian()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -306,9 +306,9 @@ class Act_master extends Controller {
 /* ====================================================================================================================================================== */
 	function add_jabatan_pengesah()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$nip = $session_data['pegawainip'];
@@ -374,9 +374,9 @@ class Act_master extends Controller {
 	
 	function edit_jabatan_pengesah()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -464,9 +464,9 @@ class Act_master extends Controller {
 	}
 	function delete_jabatan_pengesah()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -505,9 +505,9 @@ class Act_master extends Controller {
 /* ====================================================================================================================================================== */
 	function add_kategori_sop()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -543,9 +543,9 @@ class Act_master extends Controller {
 	
 	function edit_kategori_sop()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -576,9 +576,9 @@ class Act_master extends Controller {
 	
 	function delete_kategori_sop()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -601,9 +601,9 @@ class Act_master extends Controller {
 /* ====================================================================================================================================================== */
 	function add_pertanyaan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -639,9 +639,9 @@ class Act_master extends Controller {
 	
 	function edit_pertanyaan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -672,9 +672,9 @@ class Act_master extends Controller {
 	
 	function delete_pertanyaan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		

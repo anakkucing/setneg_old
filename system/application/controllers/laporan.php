@@ -14,12 +14,12 @@ class Laporan extends Controller {
 
 	function sop()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			$data=array();
 			$data['title'] = 'Laporan Daftar SOP';
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
 			$data['fullname'] = $session_data['fullname'];
@@ -43,12 +43,12 @@ class Laporan extends Controller {
 	
 	function evalusi()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
 			$data=array();
 			$data['title'] = 'Laporan Evaluasi';
 			
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$data['userid'] = $session_data['userid'];
 			$data['groupid'] = $session_data['groupid'];
 			$data['fullname'] = $session_data['fullname'];

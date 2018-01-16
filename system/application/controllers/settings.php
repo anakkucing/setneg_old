@@ -15,9 +15,9 @@ class Settings extends Controller {
 
 	function struktur_organisasi()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{	
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();
@@ -49,9 +49,9 @@ class Settings extends Controller {
 
 	function user_group()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();
@@ -89,9 +89,9 @@ class Settings extends Controller {
 	
 	function profile()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();
@@ -120,9 +120,9 @@ class Settings extends Controller {
 
 	function user_manager()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();
@@ -156,9 +156,9 @@ class Settings extends Controller {
 
 	function menu_manager()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();

@@ -16,9 +16,9 @@ class Act_front extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_slide()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -73,9 +73,9 @@ class Act_front extends Controller {
 	
 	function edit_slide()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -135,9 +135,9 @@ class Act_front extends Controller {
 	
 	function delete_slide()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -163,9 +163,9 @@ class Act_front extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_post()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -200,9 +200,9 @@ class Act_front extends Controller {
 	
 	function edit_post()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -236,9 +236,9 @@ class Act_front extends Controller {
 	
 	function delete_post()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -262,9 +262,9 @@ class Act_front extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_pengumuman()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -323,9 +323,9 @@ class Act_front extends Controller {
 	
 	function edit_pengumuman()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -389,9 +389,9 @@ class Act_front extends Controller {
 	
 	function delete_pengumuman()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -418,9 +418,9 @@ class Act_front extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_kegiatan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -479,9 +479,9 @@ class Act_front extends Controller {
 	
 	function edit_kegiatan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -545,9 +545,9 @@ class Act_front extends Controller {
 	
 	function delete_kegiatan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];

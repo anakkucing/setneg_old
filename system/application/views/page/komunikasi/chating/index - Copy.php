@@ -85,6 +85,11 @@
   
   
   <script>
+  $(document).ready(function(){
+	  $("body").removeClass("animsition site-navbar-small dashboard");
+	  $("body").addClass("animsition site-navbar-small app-message page-aside-scroll page-aside-left");
+  });
+  
 	$('.UsersChat').click(function(){
 		var id = this.id;
 		var userto = id.split('-');

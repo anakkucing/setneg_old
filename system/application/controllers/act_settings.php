@@ -16,9 +16,9 @@ class Act_settings extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_struktur_organisasi()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -83,9 +83,9 @@ class Act_settings extends Controller {
 	
 	function edit_struktur_organisasi()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -116,9 +116,9 @@ class Act_settings extends Controller {
 	
 	function delete_struktur_organisasi()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$fullname = $session_data['fullname'];
@@ -142,9 +142,9 @@ class Act_settings extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_usergroup()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -186,9 +186,9 @@ class Act_settings extends Controller {
 	
 	function edit_usergroup()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -232,9 +232,9 @@ class Act_settings extends Controller {
 	
 	function delete_usergroup()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -258,9 +258,9 @@ class Act_settings extends Controller {
 	/* ====================================================================================================================================================== */
 	function add_user()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username1 = $session_data['username'];
 		
@@ -337,9 +337,9 @@ class Act_settings extends Controller {
 	
 	function edit_user()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username1 = $session_data['username'];
 		
@@ -406,9 +406,9 @@ class Act_settings extends Controller {
 	
 	function edit_profile()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username1 = $session_data['username'];
 		
@@ -477,9 +477,9 @@ class Act_settings extends Controller {
 	
 	function delete_user()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -503,9 +503,9 @@ class Act_settings extends Controller {
 /* ====================================================================================================================================================== */
 	function add_menu()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -545,9 +545,9 @@ class Act_settings extends Controller {
 	
 	function edit_menu()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -578,9 +578,9 @@ class Act_settings extends Controller {
 	}
 	
 	function order_parent_backend(){
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -603,9 +603,9 @@ class Act_settings extends Controller {
 	}
 	
 	function order_child_backend(){
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -630,9 +630,9 @@ class Act_settings extends Controller {
 	
 	function delete_menu()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		

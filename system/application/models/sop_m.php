@@ -220,7 +220,7 @@ class Sop_m extends Model
 		/* ================================================================================================================================================================ */
 		function datasop()
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$groupid = $session_data['groupid'];
 			$userid = $session_data['userid'];
 			$unitkerjaid = $session_data['unitkerjaid'];
@@ -286,7 +286,7 @@ class Sop_m extends Model
 		/* ================================================================================================================================================================ */
 		function revisisop()
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$groupid = $session_data['groupid'];
 			$userid = $session_data['userid'];
 			$unitkerjaid = $session_data['unitkerjaid'];
@@ -322,7 +322,7 @@ class Sop_m extends Model
 		/* ================================================================================================================================================================ */
 		function pengesahsop()
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$groupid = $session_data['groupid'];
 			$userid = $session_data['userid'];
 			$unitkerjaid = $session_data['unitkerjaid'];

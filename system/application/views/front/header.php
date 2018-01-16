@@ -76,6 +76,7 @@
             <li><a href="<?=base_url()?>pengumuman">Berita</a></li>
             <li><a href="<?=base_url()?>pencarian_sop">Pencarian SOP</a></li>
             <li <?=($evaluasi > 0 ? 'style="display:block"' : 'style="display:none"')?>><a href="<?=base_url()?>evaluasi_sop">Evaluasi SOP</a></li>
+            <li><a href="<?=base_url()?>login" style="color:green; font-weight:bold">Login</a></li>
           </ul>
         </div>
         <!--/.nav-collapse --> 

@@ -177,22 +177,44 @@ class Komunikasi_m extends Model
 			$q = $this->db->query("update $tabel set $field='R' where $where='$id'");
 			return $q;
 		}
-		function list_user($userid)
+		function list_user($userid,$key)
 		{
-			$q = $this->db->query("select * from user where user_id!='$userid' order by user_fullname");
+			$q = $this->db->query("select u.*, 
+					(select c1.chating_date from chating c1 where c1.user_from=u.user_id order by chating_date desc limit 1) as chatdate,
+					(select count(c1.user_from) from chating c1 where c1.user_from=u.user_id and c1.chating_status='D' limit 1) as jmlchat from user u 
+					left join chating c on u.user_id=c.user_from
+					where u.user_id!='$userid' and u.user_fullname like '%$key%' group by u.user_id order by chatdate desc");
 			return $q;
 		}
 		function insert_chating($data){
 			$this->db->insert('chating', $data);
 		}
-		function chating($from,$to)
+	
+		
+		function UpdateStatus($id,$userid)
 		{
-			$q = $this->db->query("select * from chating where user_id='$from' and user_to='$to' order by chating_date");
+			$q = $this->db->query("update chating set chating_status='R' where (user_from='$userid' and user_to='$id') or (user_from='$id' and user_to='$userid')");
 			return $q;
 		}
+		function getAllUser($where="")
+		{
+			//if($where) $this->db->where($where);
+			return $this->db->get("user");
+		}
+		function getAll($where="")
+		{
+			if($where) $this->db->where($where);
+			$this->db->order_by("chating_date","ASC");
+			return $this->db->get("chating");
+		}
 		
-	
-	 
+		function getInsert($data){
+			return $this->db->set($data)->insert("chating");
+		}
+		
+		function getLastId($where){
+			return $this->db->where($where)->order_by("chating_id","DESC")->limit(1)->get("chating")->row_array();
+		}
 	
 		
 }

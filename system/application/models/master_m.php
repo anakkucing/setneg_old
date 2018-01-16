@@ -184,7 +184,7 @@ class master_m extends Model
 		/* ================================================================================================================================================================ */
 		function datajabatanpengesah()
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$groupid = $session_data['groupid'];
 			$userid = $session_data['userid'];
 			

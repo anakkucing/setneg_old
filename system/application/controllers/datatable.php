@@ -462,7 +462,7 @@ class Datatable extends Controller {
 /* ====================================================================================================================================================== */	
 	function data_jabatanpengesah()
 	{
-		$session_data = $this->session->userdata('mercu_in');
+		$session_data = $this->session->userdata('setneg_in');
 		$groupid = $session_data['groupid'];
 		$userid = $session_data['userid'];
 		
@@ -645,7 +645,7 @@ class Datatable extends Controller {
 /* ====================================================================================================================================================== */	
 	function data_sop()
 	{
-		$session_data = $this->session->userdata('mercu_in');
+		$session_data = $this->session->userdata('setneg_in');
 		$groupid = $session_data['groupid'];
 		$userid = $session_data['userid'];
 		$unitkerjaid = $session_data['unitkerjaid'];
@@ -735,7 +735,7 @@ class Datatable extends Controller {
 /* ====================================================================================================================================================== */	
 	function revisi_sop()
 	{
-		$session_data = $this->session->userdata('mercu_in');
+		$session_data = $this->session->userdata('setneg_in');
 		$groupid = $session_data['groupid'];
 		$userid = $session_data['userid'];
 		$unitkerjaid = $session_data['unitkerjaid'];
@@ -772,7 +772,7 @@ class Datatable extends Controller {
 /* ====================================================================================================================================================== */	
 	function pencarian_sop()
 	{
-		$session_data = $this->session->userdata('mercu_in');
+		$session_data = $this->session->userdata('setneg_in');
 		$groupid = $session_data['groupid'];
 		$userid = $session_data['userid'];
 		$unitkerjaid = $session_data['unitkerjaid'];
@@ -809,7 +809,7 @@ class Datatable extends Controller {
 /* ====================================================================================================================================================== */	
 	function pengesahan_sop()
 	{
-		$session_data = $this->session->userdata('mercu_in');
+		$session_data = $this->session->userdata('setneg_in');
 		$groupid = $session_data['groupid'];
 		$userid = $session_data['userid'];
 		$unitkerjaid = $session_data['unitkerjaid'];
@@ -975,7 +975,7 @@ class Datatable extends Controller {
 /* ====================================================================================================================================================== */
 	function notif()
 	{
-		$session_data = $this->session->userdata('mercu_in');
+		$session_data = $this->session->userdata('setneg_in');
 		$userid = $session_data['userid'];
 		$groupid = $session_data['groupid'];
 		
@@ -1113,7 +1113,7 @@ class Datatable extends Controller {
 /* ====================================================================================================================================================== */
 	function data_kontak()
 	{
-		$session_data = $this->session->userdata('mercu_in');
+		$session_data = $this->session->userdata('setneg_in');
 		$userid = $session_data['userid'];
 		
 		$result = $this->komunikasi_m->get_datatables('kontak'); //nama function

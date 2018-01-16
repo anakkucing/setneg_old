@@ -1,4 +1,11 @@
+<script>
+function newDoc() {
+		window.location.assign("file:///F:/sharing/nayaka.txt")
+		alert('a')
+}
+</script>
 
+<a href="#" onclick="newDoc()">a</a>
 <section id="slider" class="">
   <!-- Carousel -->
   <div id="main-slide" class="carousel slide" data-ride="carousel">

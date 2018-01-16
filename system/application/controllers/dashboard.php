@@ -15,9 +15,9 @@ class Dashboard extends Controller {
 
 	function index()
 	{			
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-			$session_data = $this->session->userdata('mercu_in');
+			$session_data = $this->session->userdata('setneg_in');
 			$userid = $session_data['userid'];
 			
 			$data=array();

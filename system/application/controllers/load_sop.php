@@ -17,9 +17,9 @@ class Load_sop extends Controller {
 /* ====================================================================================================================================================== */
 	function add_header()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -166,9 +166,9 @@ class Load_sop extends Controller {
 /* ====================================================================================================================================================== */
 	function add_kegiatan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		

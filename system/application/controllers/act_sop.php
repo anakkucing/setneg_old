@@ -16,9 +16,9 @@ class Act_sop extends Controller {
 /* ====================================================================================================================================================== */
 	function add_sop()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$unitkerjaid = $session_data['unitkerjaid'];
@@ -185,9 +185,9 @@ class Act_sop extends Controller {
 	
 	function upload_sopmanual()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -244,9 +244,9 @@ class Act_sop extends Controller {
 	
 	function kirim_sop()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -280,9 +280,9 @@ class Act_sop extends Controller {
 	
 	function delete_sop()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -306,9 +306,9 @@ class Act_sop extends Controller {
 /* ====================================================================================================================================================== */
 	function add_revisi()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$unitkerjaid = $session_data['unitkerjaid'];
@@ -352,9 +352,9 @@ class Act_sop extends Controller {
 	
 	function tindakan_revisi()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$unitkerjaid = $session_data['unitkerjaid'];
@@ -413,9 +413,9 @@ class Act_sop extends Controller {
 /* ====================================================================================================================================================== */
 	function add_disahkan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -453,9 +453,9 @@ class Act_sop extends Controller {
 /* ====================================================================================================================================================== */
 	function add_dinomorkan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -495,9 +495,9 @@ class Act_sop extends Controller {
 /* ====================================================================================================================================================== */
 	function add_cover()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$satkerkode = $session_data['satkerkode'];
@@ -530,9 +530,9 @@ class Act_sop extends Controller {
 
 	function edit_cover()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$satkerkode = $session_data['satkerkode'];
@@ -571,9 +571,9 @@ class Act_sop extends Controller {
 /* ====================================================================================================================================================== */
 	function add_penetapan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$satkerkode = $session_data['satkerkode'];
@@ -663,9 +663,9 @@ class Act_sop extends Controller {
 /* ====================================================================================================================================================== */
 	function add_penjelasan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$satkerkode = $session_data['satkerkode'];
@@ -696,9 +696,9 @@ class Act_sop extends Controller {
 	
 	function edit_penjelasan()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 				$satkerkode = $session_data['satkerkode'];
@@ -735,9 +735,9 @@ class Act_sop extends Controller {
 	
 	function review_semua_sop()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -791,9 +791,9 @@ class Act_sop extends Controller {
 	
 	function tidak_revisi()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
@@ -818,9 +818,9 @@ class Act_sop extends Controller {
 	
 	function add_evaluasi()
 	{
-		if($this->session->userdata('mercu_in'))
+		if($this->session->userdata('setneg_in'))
 		{
-				$session_data = $this->session->userdata('mercu_in');
+				$session_data = $this->session->userdata('setneg_in');
 				$userid = $session_data['userid'];		
 				$username = $session_data['username'];
 		
